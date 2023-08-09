@@ -50,7 +50,6 @@ public class Measurement {
         this.value = value;
     }
 
-    // Jackson смотрит на название геттера, отсекает is и отсавляет название поля
     public Boolean isRaining() {
         return raining;
     }

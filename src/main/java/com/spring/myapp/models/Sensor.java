@@ -15,8 +15,8 @@ public class Sensor implements Serializable {
     private Integer id;
 
     @Column(name = "name")
-    @NotEmpty(message = "Название не должно быть пустым!")
-    @Size(min = 3, max = 30, message = "Название сенсора должно быть от 3 до 30 символов!")
+    @NotEmpty(message = "The name should not be blank!")
+    @Size(min = 3, max = 30, message = "The name of the sensor must be between 3 and 30 characters!")
     private String name;
 
     public Integer getId() {

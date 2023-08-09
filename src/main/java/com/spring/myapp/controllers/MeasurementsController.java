@@ -52,7 +52,6 @@ public class MeasurementsController {
 
     @GetMapping()
     public MeasurementsResponse getMeasurements() {
-        // Обычно список из элементов оборачивается в один объект для пересылки
         return new MeasurementsResponse(measurementService.findAll().stream().map(this::convertToMeasurementDTO)
                 .collect(Collectors.toList()));
     }
